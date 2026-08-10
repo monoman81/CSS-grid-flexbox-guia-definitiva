@@ -5,51 +5,76 @@
     <meta http-equiv="x-ua-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>ECommerce - Nosotros</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/app.css">
-    <style>
-        .header {
-            height: 50vh;
-            background-color: #037bc0;
-        }
-
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            border: 1px solid red;
-            height: 100%;
-            display: flex;
-            align-items: center;
-        }
-
-        .menu {
-            color: white;
-            font-weight: 800;
-            display: flex;
-        }
-
-    </style>
 </head>
 <body>
-    <h1>Nosotros</h1>
-    <a href="index.html">Volver al Inicio</a>
-    <div class="header">
-        <div class="container">
-            <div class="menu">
-                <ul>
-                    <li>Menu 1</li>
-                    <li>Menu 2</li>
-                    <li>Menu 3</li>
-                    <li>Menu 4</li>
-                    <li>Menu 5</li>
-                    <li>Menu 6</li>
-                </ul>
-                <ul>
-                    <li>Menu 7</li>
-                    <li>Menu 8</li>
-                    <li>Menu 9</li>
-                </ul>
+    <header>
+        <h1 class="nombre-sitio text-center class=precio">Tienda <span>Muebles</span></h1>
+    </header>
+    <div class="contenedor-navegacion">
+        <nav class="nav-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="blog.html">Blog</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
+    <main class="contenedor contenido-principal">
+        <h2 class="text-center">Sobre Nosotros</h2>
+        <div class="contenido-nosotros">
+            <div class="imagen">
+                <img src="img/nosotros.jpg" alt="sobre nosotros">
+            </div>
+            <div class="informacion-nosotros">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consectetur consequatur, debitis deleniti dolor
+                    doloremque doloribus error esse hic impedit incidunt magnam numquam officiis perferendis placeat quae quos sapiente
+                    soluta velit voluptate. Dicta eius eum excepturi facilis nulla praesentium quam repudiandae sapiente voluptatibus.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consectetur consequatur, debitis deleniti dolor
+                    doloremque doloribus error esse hic impedit incidunt magnam numquam officiis perferendis placeat quae quos sapiente
+                    soluta velit voluptate. Dicta eius eum excepturi facilis nulla praesentium quam repudiandae sapiente voluptatibus.
+                </p>
             </div>
         </div>
-    </div>
+    </main>
+    <footer class="site-footer">
+        <div class="grid-footer contenedor">
+            <div>
+                <h3>Categorias</h3>
+                <nav class="footer-nav">
+                    <a href="#">Cocina</a>
+                    <a href="#">Oficina</a>
+                    <a href="#">Jardin</a>
+                    <a href="#">Cochera</a>
+                    <a href="#">Dormitorios</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Sobre Nosotros</h3>
+                <nav class="footer-nav">
+                    <a href="#">Nuestra Historia</a>
+                    <a href="#">Mision, Vision y Valores</a>
+                    <a href="#">Carreras</a>
+                    <a href="#">Politica de Privacidad</a>
+                    <a href="#">Terminos del Servicio</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Soporte</h3>
+                <nav class="footer-nav">
+                    <a href="#">Preguntas Frecuentes</a>
+                    <a href="#">Ayuda en Linea</a>
+                    <a href="#">Confianza y Seguridad</a>
+                </nav>
+            </div>
+        </div>
+        <p class="text-center">Todos los derechos reservados. Tienda Muebles</p>
+    </footer>
+
 </body>
 </html>
