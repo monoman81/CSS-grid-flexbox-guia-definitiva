@@ -1,0 +1,37 @@
+@use "base/variables" as v;
+
+.slider {
+    overflow: hidden;
+    position: relative;
+
+    &__slide {
+        height: 100%;
+        flex-shrink: 0;
+        width: 100%;
+        position: relative;
+        transition: transform .3s ease-in-out;
+    }
+
+    &__imagen {
+        width: 100%;
+    }
+
+    .swiper-navigation-icon {
+        color: v.$blanco;
+        fill: v.$blanco;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: v.$blanco;
+
+        &.swiper-pagination-bullet-active {
+            background-color: v.$primario;
+        }
+    }
+
+    //.swipper-button-next svg,
+    //.swipper-button-prev svg {
+    //    color: v.$blanco;
+    //    fill: v.$blanco;
+    //}
+}

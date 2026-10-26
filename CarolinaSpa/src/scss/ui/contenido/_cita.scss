@@ -1,0 +1,29 @@
+@use "sass:color";
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.cita {
+    text-align: center;
+    background-image: url("../img/bg_citas.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 5rem 0;
+    color: v.$blanco;
+
+    &__heading {
+        @include m.heading;
+        font-size: 6rem;
+    }
+
+    &__texto {
+        max-width: 60rem;
+        margin: 0 auto;
+        line-height: 1.8;
+    }
+
+    &__enlace {
+        @include m.boton(v.$primario, v.$blanco);
+        padding: 2rem 10rem;
+    }
+}
