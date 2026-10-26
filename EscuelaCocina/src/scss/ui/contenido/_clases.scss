@@ -1,0 +1,73 @@
+@use "sass:color";
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.clases {
+    padding: 5rem 0;
+    background-color: v.$gris;
+
+    &__heading {
+        @include m.heading;
+    }
+
+    &__grid {
+        @include m.grid(1, 2rem);
+
+        @include m.tablet {
+            @include m.grid(2, 2rem);
+            align-items: start;
+        }
+
+        @include m.desktop {
+            @include m.grid(3, 2rem);
+        }
+    }
+}
+
+.clase {
+    border: 1px solid color.adjust(v.$gris, $lightness: -20%);
+
+    &__imagen {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__meta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+        background-color: v.$primario;
+        color: v.$blanco;
+    }
+
+    &__precio {
+        border-radius: 1rem;
+        background-color: v.$secundario;
+        padding: .5rem 1rem;
+        color: v.$negro;
+        font-weight: 700;
+        font-size: 1.4rem;
+    }
+
+    &__nombre {
+        min-height: 5.5rem;
+    }
+
+    &__contenido {
+        margin-top: 1rem;
+        padding: 0 2rem;
+    }
+
+    &__descripcion {
+        color: v.$primario;
+    }
+
+    &__enlace {
+        @include m.boton(v.$primario, v.$blanco);
+        display: block;
+        font-size: 1.6rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+}
